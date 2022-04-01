@@ -1,0 +1,249 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .contain {
+    /* max-width: 1700px; */
+/* } */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: flex;
+    margin-bottom: 61px;
+}
+
+.logo1 {
+    position: relative;
+    background: linear-gradient(138.36deg, #B1B1B1 0%, rgba(203, 202, 202, 0.83734) 15.33%, rgba(255, 255, 255, 0.609125) 44.47%, rgba(255, 255, 255, 0.489583) 48.04%, rgba(250, 248, 248, 0.576859) 54.18%, rgba(203, 202, 202, 0.813016) 80.24%, #B1B1B1 98.13%);
+    width: 100px;
+    height: 100px; 
+    border-radius: 21px;
+    margin-left: 31px;
+    margin-top: 29px;
+    margin-right: 13px;
+}
+
+.circle1 {
+    border-radius: 50%;
+    height: 43px;
+    width: 44px;
+    background-color: #ffffff;
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 35px);
+    z-index: 2;
+}
+
+.circle2 {
+    border-radius: 50%;
+    height: 43px;
+    width: 44px;
+    z-index: 1;
+    background-color: #000000;
+    position: absolute;
+    top: calc(50% - 22px);
+    right: calc(50% - 35px);
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(138.36deg, rgba(255, 255, 255, 0.709219) 0%, rgba(225, 225, 225, 0.83734) 33.73%, #DDDBDB 48.55%, rgba(232, 229, 229, 0.813016) 61.84%, rgba(255, 255, 255, 0.813016) 98.13%);
+    margin-top: 29px;
+    border-radius: 21px;
+    width: 100px;
+    height: 100px;
+}
+
+.langs {
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 39px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 769px;
+    padding-top: 43.5px;
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 24px;
+    margin-right: auto; 
+    margin-left: auto;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    height: 174px;
+}
+
+
+
+
+
+
+.link-btn {
+    text-decoration: none;
+    color: #000000;
+    /* padding: 20px 150px; */
+}
+
+/* .btn:hover {
+    background-color: grey;   
+} */
+
+.text {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* .langs {
+    
+} */
+
+
+@media (max-width: 1070px) {
+    .header__top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo1 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 45px;
+        width: 670px;
+        height: 150px;
+    }
+
+    .text {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .link-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .text {
+        text-align: center;
+    }
+
+    .link-btn {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 720px)  {
+    .btn {
+        width: 600px;
+    }
+}
+
+@media (max-width: 628px) {
+    .btn {
+        width: 550px;
+        height: 140px;
+    }
+
+    .link-btn {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+    .btn {
+        width: 500px;
+    }
+}
+
+@media (max-width: 510px) {
+    .btn {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .btn {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 86px;
+        padding-top: 26px;
+        font-size: 28px;
+        border-radius: 20px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 410px) {
+    .btn {
+        width: 300px;
+
+    }
+
+    .langs {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
